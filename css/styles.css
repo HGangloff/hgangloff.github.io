@@ -25,11 +25,11 @@ a {
 	text-decoration:none;
 }
 a:hover { text-decoration:underline; }
-a:visited { color:#928280; }
+/* a:visited { color:#928280; } */
 footer a { color:#a60400; }
 h1 a { color:#3E3E3E; }
 h1 a:hover { text-decoration:none; }
-h1 a:visited { color:#3E3E3E; }
+/* h1 a:visited { color:#3E3E3E; } */
 section {
 	margin:0em auto;
 	width:95%;
@@ -86,8 +86,8 @@ footer p {
 }
 
 @media only screen and (min-width:36em) {
-    h1 { font-size:3em; }
-	h2 { font-size:1.5em; }
+    h1 { font-size:2em; }
+	h2 { font-size:1.3em; }
 	section { width:70%; }
 	.buttons { margin:0 auto 2em; }
 	.download, .github {
