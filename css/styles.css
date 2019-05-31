@@ -27,8 +27,8 @@ a {
 a:hover { text-decoration:underline; }
 /* a:visited { color:#928280; } */
 footer a { color:#a60400; }
-h1 a { color:#3E3E3E; }
-h1 a:hover { text-decoration:none; }
+/* h1 a { color:#3E3E3E; }
+h1 a:hover { text-decoration:none; } */
 /* h1 a:visited { color:#3E3E3E; } */
 section {
 	margin:0em auto;
