@@ -35,12 +35,7 @@ section {
 	margin:0em auto;
 	width:95%;
 }
-section > h3 {
-	color:#3E3E3E;
-	position:absolute;
-    top:-9999px;
-    left:-9999px;
-}
+
 .buttons {
 	text-align:center;
 	overflow:hidden;
