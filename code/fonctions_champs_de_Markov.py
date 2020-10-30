@@ -6,20 +6,20 @@ Hugo Gangloff
 
 import numpy as np
 
-def calc_proba_champ(alpha, normalization=True):
+def calc_proba_champ(alpha, normalization=True, voisinage=4):
     '''
     crée un np array de taille 5x2 avec
     proba[i, j] = p(x_s=j|"il y a i voisins de type j")
     '''
-    proba = np.empty((5, 2))
-    for i in range(5):
-        proba[i, 0] = np.exp((2 * i - 4) * alpha)
-        proba[i, 1] = np.exp((2 * (4 - i) - 4) * alpha)
+    proba = np.empty((voisinage + 1, 2))
+    for i in range(voisinage + 1):
+        proba[i, 0] = np.exp((2 * i - voisinage) * alpha)
+        proba[i, 1] = np.exp((2 * (voisinage - i) - voisinage) * alpha)
         if normalization:
             proba[i] /= np.sum(proba[i])
     return proba
 
-def gene_Gibbs_proba(mm, nn, classe, proba, nb_iter):
+def gene_Gibbs_proba(mm, nn, classe, proba, nb_iter, voisinage=4):
     '''
     génère un champ de Markov de taille mmxnn
     de classes et lois locales données à l'aide de
@@ -27,8 +27,13 @@ def gene_Gibbs_proba(mm, nn, classe, proba, nb_iter):
     '''
     # initialisation aléatoire de l'échantillonneur de Gibbs
     X = np.random.randint(0, 2, size=(mm, nn))
+    X = (X == 0) * classe[0] + (X == 1) * classe[1]
 
-    table_voisins = [(0, -1), (-1, 0), (0, 1), (1, 0)]
+    if voisinage == 4:
+        table_voisins = [(0, -1), (-1, 0), (0, 1), (1, 0)]
+    elif voisinage == 8:
+        table_voisins = [(0, -1), (-1, 0), (0, 1), (1, 0), (-1, -1), (1, -1),
+        (-1, 1), (1, 1)]
 
     # pour chaque itération de l'échantillonneur de Gibbs
     for k in range(nb_iter):
@@ -40,13 +45,13 @@ def gene_Gibbs_proba(mm, nn, classe, proba, nb_iter):
                 # i.e. on compte le nombre de voisins à la classe 1
                 config = 0
                 for v in table_voisins:
-                    config += (X[i + v[0], j + v[1]] == classe[1])
+                    config += (X[i + v[0], j + v[1]] == classe[0])
                 distribution_locale = proba[config]
                 # on met à jour le site avec un tirage selon la
                 # distribution locale
                 u = np.random.rand(1, 1)
-                X[i, j] = ((u <= distribution_locale[1]) * classe[0] +
-                    (u > distribution_locale[1]) * classe[1])
+                X[i, j] = ((u <= distribution_locale[0]) * classe[0] +
+                    (u > distribution_locale[0]) * classe[1])
 
     return X
 
@@ -92,6 +97,8 @@ def genere_Gibbs_proba_apost(Y, m1, sig1, m2, sig2, classe, proba, nb_iter,
     if init_gibbs is None:
         # initialisation aléatoire de l'échantillonneur de Gibbs
         init_gibbs = np.random.randint(0, 2, size=Y.shape)
+        init_gibbs = ((init_gibbs == 0) * classe[0] + (init_gibbs == 1) *
+            classe[1])
     X = init_gibbs
 
     table_voisins = [(0, -1), (-1, 0), (0, 1), (1, 0)]
