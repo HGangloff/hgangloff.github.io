@@ -62,7 +62,6 @@
             <section>
                 <ul>
 		<li>Our article on Generalized Pairwise Markov Models has been accepted at <a href="https://2021.ieeemlsp.org/" target="_blank">MLSP 2021</a> conference</li>
-		    <li>A general parametrization framework for Pairwise Markov Models: an application to unsupervised image segmentation [<a href="https://hal.archives-ouvertes.fr/hal-03181237v2" target="_blank">preprint pdf</a>]</li>
                 </ul>
                     <p>See previous news <a
                     href="old_news.html">here</a>.</p>
@@ -108,8 +107,6 @@
             <section>
                 <h3>Preprints</h3>
 		<ul>
-		<li>A general parametrization framework for Pairwise Markov Models: an application to unsupervised image segmentation, H. Gangloff,
-K. Morales, Y. Petetin, 2021, [<a href="https://hal.archives-ouvertes.fr/hal-03181237v2" target="_blank">preprint pdf</a>]</li>
 		</ul>
                 <h3>Journal articles</h3>
 		<ul>
@@ -123,6 +120,9 @@ K. Morales, Y. Petetin, 2021, [<a href="https://hal.archives-ouvertes.fr/hal-031
 		</ul>
                 <h3>Conference articles</h3>
 		<ul>
+		<li>A general parametrization framework for Pairwise Markov Models: an application to unsupervised image segmentation, H. Gangloff,
+K. Morales, Y. Petetin, <i> International Workshop on Machine Learning for
+Signal Processing</i> (MLSP) 2021, [<a href="https://hal.archives-ouvertes.fr/hal-03181237v2" target="_blank">preprint pdf</a>]</li>
 	<li>Unsupervised segmentation with Spatial Triplet Markov Trees, H. Gangloff, J-B Courbot, E. Monfrini, C. Collet, <i>International Conference on Acoustics, Speech and Signal Processing</i> (ICASSP), 2021, [<a href="https://ieeexplore.ieee.org/document/9414435" target="_blank">link</a>], [<a href="pdfs/stmt_icassp_2021.pdf" target="_blank">slides</a>], [<a href="pdfs/poster_stmt_icassp_2021.pdf" target="_blank">poster</a>]</li> 
             <li>Improved centerline tracking for new descriptors of
             atherosclerotic aortas, H. Gangloff, E. Monfrini, M. Z. Ghariani, M.
@@ -144,27 +144,8 @@ K. Morales, Y. Petetin, 2021, [<a href="https://hal.archives-ouvertes.fr/hal-031
                     International Conference on Applied and Computational
                     Mathematics (ICACM) </i>, 2016</li>
 		</ul>
-                <h3>Other communications</h3>
-                <ul>
-                    <li>Segmentation de stents dans
-des données médicales à
-rayons-X corrompues par les
-artéfacts, H. Gangloff, E. Monfrini, C. Collet, N. Chakfé, <i>IMT : Healthcare 4.0</i>, Poster presentation, 2019
-                    </li>
-                    <li>A deep convolutional network approach for semantic
-                    segmentation of histological images, H. Gangloff, S. Kuntz, E. Monfrini, R. Virmani, C. Collet, N. Chakfé, <i>Young Research Prize of 11th European Symposium on
-                    Vascular Biomaterial</i>, Oral Session, 2019</li>
-                    <li>Towards objective descriptors for calcified
-                    atherosclerosis of the aortic bifurcation, H. Gangloff,
-Mohamed Zied Ghariani, M. Ohana, E. Monfrini, C. Collet, N. Chakfé, <i>Young
-                    Research Prize of 11th European Symposium on Vascular
-                    Biomaterial</i>, Oral Session, 2019</li>
-                    <li>Réduction des artéfacts de biomatériaux métalliques en imagerie médicale , H. Gangloff, E. Monfrini, C. Collet, N. Chakfé, <i>Journées de la Fédération de Médecine Translationnelle de Strasbourg</i>, Oral session, 2019</li>
-                    <li>Developping new tools for stent segmentation and in vivo analysis, H. Gangloff, E. Monfrini, N. Chakfé, C. Collet, <i>Journées de la Fédération de Médecine Translationnelle de Strasbourg</i>,
-Oral session, 2018</li>
-                    <li>In-situ stent model classification based on directed graphs and statistical learning, H. Gangloff, C. Collet, N. Chakfé, E. Monfrini, <i>Young Research Prize of 10th European Symposium on Vascular Biomaterial</i>, Poster Session, 2017</li>
-                    <li>3D-unwrapping of stent structure, H. Gangloff, E. Girsowicz, N. Chakfé, C. Collet, E. Monfrini, <i>Young Research Prize of 10th European Symposium on Vascular Biomaterial</i>, Poster session, 2017</li>
-                </ul>
+            <p>See also <a
+            href="all_publi.html">abstract selected publications</a>.</p>
 		<h3>PhD Thesis</h3>
 		<ul>
 		<li>Probabilistic models for image processing: applications in vascular surgery, H. Gangloff, defended on December 15, 2020, [<a href="https://hal.archives-ouvertes.fr/tel-03147834/document">pdf</a>] [<a href="pdfs/thesis_defense_hugogangloff_last.pdf">slides</a>]</li>
@@ -175,12 +156,23 @@ Oral session, 2018</li>
 Technology Society (SEE), in 2017, for the research project <i>Stent segmentation and classification in superficial femoral artery in microCT images.</i></li>
                     <li>Second Prize for the best research internship from Mines-Télécom Foundation, in 2017, for the research project <i>Stent segmentation and classification in superficial femoral artery in microCT images.</i></li>
                 </ul>
+
             </section>
 
 	    <h2 id='code'> Code </h2>
             <section>
             <h3>Some scripts and algorithm implementations</h3>
 		<ul>
+                   <li> Experimentally show the equivalence between a gradient
+                   ascent over the EM quantity Q and a gradient
+                   ascent over the model likelihood, in the case of the
+                   training of a Hidden Markov Chain with Gaussian
+                   Independent Noise:
+            <a href="https://gist.github.com/HGangloff/6b6a177eed2ae3387cbb5aa92fea87c4">
+                Python script</a>, <a href="pdfs/note_gradEM.pdf" target="_blank">note
+                pdf</a> and see section 2.1 of <a
+                href="https://projecteuclid.org/journals/annals-of-statistics/volume-45/issue-1/Statistical-guarantees-for-the-EM-algorithm--From-population-to/10.1214/16-AOS1435.full">
+                this paper</a></li>
                    <li> Gaussian Markov Random Field simulation using Fourier properties and base matrices for efficiency:
             <a href="https://gist.github.com/HGangloff/d6b4a7f12361c53379cf6a8d5177ec61">
                 Python script</a></li>
