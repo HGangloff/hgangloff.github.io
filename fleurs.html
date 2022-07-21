@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fleurs</title>
+    <style>
+        table {
+        counter-reset: rowNumber;
+        }
+
+        table tr:not(tr:first-child):before {
+        display: table-cell;
+        counter-increment: rowNumber;
+        content: counter(rowNumber) ".";
+        padding-right: 0.3em;
+        text-align: center;
+        vertical-align:middle;
+        }
+    </style>
+  </head>
+  <body>
+  <!-- Files are compressed 50% with the batch command :
+for i in *.jpg; do convert $i -quality 50% $i; done;
+  -->
+    
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <tr>
+        <td>Achillée Millefeuille</td>
+        <td><a href="./fleurs/achillée_millefeuille.jpg">
+        	<img src="./fleurs/achillée_millefeuille.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Agapanthe</td>
+        <td><a href="./fleurs/agapanthe.jpg">
+                <img src="./fleurs/agapanthe.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Alstroemeria <br /> (Lis des Incas)</td>
+        <td><a href="./fleurs/alstroemeria_lis_des_incas.jpg">
+                <img src="./fleurs/alstroemeria_lis_des_incas.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Althéa</td>
+        <td><a href="./fleurs/althéa.jpg">
+                <img src="./fleurs/althéa.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Basilique Pourpre</td>
+        <td><a href="./fleurs/basilique_pourpre.jpg">
+                <img src="./fleurs/basilique_pourpre.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Bégonia</td>
+        <td><a href="./fleurs/begonia.jpg">
+                <img src="./fleurs/begonia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Bleuet</td>
+        <td><a href="./fleurs/bleuet.jpg">
+                <img src="./fleurs/bleuet.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Bouillon Blanc</td>
+        <td><a href="./fleurs/bouillon_blanc_2.jpg">
+                <img src="./fleurs/bouillon_blanc_2.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Buddleia</td>
+        <td><a href="./fleurs/buddleia.jpg">
+                <img src="./fleurs/buddleia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Calibrachoa</td>
+        <td><a href="./fleurs/calibrachoa.jpg">
+                <img src="./fleurs/calibrachoa.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Carotte Sauvage</td>
+        <td><a href="./fleurs/carotte_sauvage.jpg">
+        	<img src="./fleurs/carotte_sauvage.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Cassia</td>
+        <td><a href="./fleurs/cassia.jpg">
+                <img src="./fleurs/cassia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Centranthe</td>
+        <td><a href="./fleurs/centranthe.jpg">
+                <img src="./fleurs/centranthe.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Chicorée</td>
+        <td><a href="./fleurs/chicoree.jpg">
+                <img src="./fleurs/chicoree.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Ciste Cotonneux</td>
+        <td><a href="./fleurs/ciste_cotonneux.jpg">
+                <img src="./fleurs/ciste_cotonneux.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Coquelicot</td>
+        <td><a href="./fleurs/coquelicot.jpg">
+                <img src="./fleurs/coquelicot.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Coquelourde</td>
+        <td><a href="./fleurs/coquelourde.jpg">
+                <img src="./fleurs/coquelourde.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Cosmos</td>
+        <td><a href="./fleurs/cosmos.jpg">
+                <img src="./fleurs/cosmos.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Crocosmia</td>
+        <td><a href="./fleurs/crocosmia.jpg">
+                <img src="./fleurs/crocosmia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Dahlia</td>
+        <td><a href="./fleurs/dahlia.jpg">
+                <img src="./fleurs/dahlia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Digitale</td>
+        <td><a href="./fleurs/digitale.jpg">
+        	<img src="./fleurs/digitale.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Dipladénia</td>
+        <td><a href="./fleurs/dipladenia.jpg">
+                <img src="./fleurs/dipladenia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Fuchsia</td>
+        <td><a href="./fleurs/fuchsia.jpg">
+                <img src="./fleurs/fuchsia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Gaura</td>
+        <td><a href="./fleurs/gaura.jpg">
+                <img src="./fleurs/gaura.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Genêts</td>
+        <td><a href="./fleurs/genêts.jpg">
+                <img src="./fleurs/genêts.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Glycine</td>
+        <td><a href="./fleurs/glycine.jpg">
+                <img src="./fleurs/glycine.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Grande Berce</td>
+        <td><a href="./fleurs/grande_berce.jpg">
+                <img src="./fleurs/grande_berce.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Grande Berce du Caucase</td>
+        <td><a href="./fleurs/grande_berce_du_caucase.jpg">
+                <img src="./fleurs/grande_berce_du_caucase.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Griffe de Sorcière</td>
+        <td><a href="./fleurs/griffe_de_sorciere.jpg">
+                <img src="./fleurs/griffe_de_sorciere.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Hémérocalle</td>
+        <td><a href="./fleurs/hémérocalle.jpg">
+                <img src="./fleurs/hémérocalle.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Hortensia</td>
+        <td><a href="./fleurs/hortensia.jpg">
+        	<img src="./fleurs/hortensia.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Hortensia à Tête Plate</td>
+        <td><a href="./fleurs/hortensia_a_tete_plate.jpg">
+                <img src="./fleurs/hortensia_a_tete_plate.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Knautie des champs</td>
+        <td><a href="./fleurs/knautie_des_champs.jpg">
+                <img src="./fleurs/knautie_des_champs.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Knautie Macedonia</td>
+        <td><a href="./fleurs/knautie_macedonia.jpg">
+                <img src="./fleurs/knautie_macedonia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Lantana</td>
+        <td><a href="./fleurs/lantana.jpg">
+                <img src="./fleurs/lantana.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Laurier Blanc</td>
+        <td><a href="./fleurs/laurier_blanc.jpg">
+                <img src="./fleurs/laurier_blanc.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Laurier Rose</td>
+        <td><a href="./fleurs/laurier_rose.jpg">
+                <img src="./fleurs/laurier_rose.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Lavatère</td>
+        <td><a href="./fleurs/lavatère.jpg">
+                <img src="./fleurs/lavatère.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Leonotis</td>
+        <td><a href="./fleurs/leonotis.jpg">
+                <img src="./fleurs/leonotis.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Linaire</td>
+        <td><a href="./fleurs/linaire.jpg">
+                <img src="./fleurs/linaire.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Liseron</td>
+        <td><a href="./fleurs/liseron.jpg">
+        	<img src="./fleurs/liseron.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Lis</td>
+        <td><a href="./fleurs/lys.jpg">
+                <img src="./fleurs/lys.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Marguerite</td>
+        <td><a href="./fleurs/marguerite.jpg">
+                <img src="./fleurs/marguerite.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Millepertuis Arbustif</td>
+        <td><a href="./fleurs/millepertuis_arbustif.jpg">
+                <img src="./fleurs/millepertuis_arbustif.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Millepertuis Sauvage</td>
+        <td><a href="./fleurs/millepertuis_sauvage.jpg">
+                <img src="./fleurs/millepertuis_sauvage.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Muflier blanc</td>
+        <td><a href="./fleurs/muflier_blanc.jpg">
+                <img src="./fleurs/muflier_blanc.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Myosotis</td>
+        <td><a href="./fleurs/myosotis.jpg">
+                <img src="./fleurs/myosotis.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Oeillet d'Inde (Tagète)</td>
+        <td><a href="./fleurs/oeillet_d_inde.jpg">
+                <img src="./fleurs/oeillet_d_inde.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Osteospermum</td>
+        <td><a href="./fleurs/osteospermum_blanc.jpg">
+                <img src="./fleurs/osteospermum_blanc.jpg" alt="" border=1 height=200 width=200>
+            </a><br />
+            <a href="./fleurs/osteospermum_violet.jpg">
+                <img src="./fleurs/osteospermum_violet.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Passiflore</td>
+        <td><a href="./fleurs/passiflore.jpg">
+                <img src="./fleurs/passiflore.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Pavot de Californie</td>
+        <td><a href="./fleurs/pavot_de_californie.jpg">
+        	<img src="./fleurs/pavot_de_californie.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Pélargonium</td>
+        <td><a href="./fleurs/pélargonium.jpg">
+                <img src="./fleurs/pélargonium.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Pensée</td>
+        <td><a href="./fleurs/pensée.jpg">
+                <img src="./fleurs/pensée.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Petite Ciguë</td>
+        <td><a href="./fleurs/petite_cigue.jpg">
+                <img src="./fleurs/petite_cigue.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Pétunia</td>
+        <td><a href="./fleurs/pétunia.jpg">
+                <img src="./fleurs/pétunia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Pois de Senteur</td>
+        <td><a href="./fleurs/pois_de_senteur.jpg">
+                <img src="./fleurs/pois_de_senteur.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Polygala</td>
+        <td><a href="./fleurs/polygala.jpg">
+                <img src="./fleurs/polygala.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Ronce</td>
+        <td><a href="./fleurs/ronce.jpg">
+                <img src="./fleurs/ronce.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Rose Trémière</td>
+        <td><a href="./fleurs/rose_trémière_rose.jpg">
+                <img src="./fleurs/rose_trémière_rose.jpg" alt="" border=1 height=200 width=200>
+            </a><br />
+            <a href="./fleurs/rose_trémière_violette.jpg">
+                <img src="./fleurs/rose_trémière_violette.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Rudbeckia</td>
+        <td><a href="./fleurs/rudbeckia.jpg">
+                <img src="./fleurs/rudbeckia.jpg" alt="" border=1 height=200 width=200>
+            </a><br />
+            <a href="./fleurs/rudbeckia_noir.jpg">
+                <img src="./fleurs/rudbeckia_noir.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Salicaire</td>
+        <td><a href="./fleurs/salicaire.jpg">
+        	<img src="./fleurs/salicaire.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Sauge</td>
+        <td><a href="./fleurs/sauge.jpg">
+                <img src="./fleurs/sauge.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Sauge Rouge</td>
+        <td><a href="./fleurs/sauge_rouge.jpg">
+                <img src="./fleurs/sauge_rouge.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Scabia (Knautia)</td>
+        <td><a href="./fleurs/scabia_knautia.jpg">
+                <img src="./fleurs/scabia_knautia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Seringat</td>
+        <td><a href="./fleurs/seringat.jpg">
+                <img src="./fleurs/seringat.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Solanum Jasminoïde<br />
+            (Morelle Faux Jasmin)</td>
+        <td><a href="./fleurs/solanum_jasminoide.jpg">
+                <img src="./fleurs/solanum_jasminoide.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Soleil du Mexique</td>
+        <td><a href="./fleurs/soleil_du_mexique.jpg">
+                <img src="./fleurs/soleil_du_mexique.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Souci</td>
+        <td><a href="./fleurs/souci.jpg">
+                <img src="./fleurs/souci.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Sureau</td>
+        <td><a href="./fleurs/sureau.jpg">
+                <img src="./fleurs/sureau.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Thym</td>
+        <td><a href="./fleurs/thym.jpg">
+                <img src="./fleurs/thym.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Tritoma</td>
+        <td><a href="./fleurs/tritoma.jpg">
+        	<img src="./fleurs/tritoma.jpg" alt="" border=1 height=200 width=200>
+   	    </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Troène</td>
+        <td><a href="./fleurs/troene.jpg">
+                <img src="./fleurs/troene.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Trompette de Jéricho</td>
+        <td><a href="./fleurs/trompette_de_jéricho.jpg">
+                <img src="./fleurs/trompette_de_jéricho.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Weigelia</td>
+        <td><a href="./fleurs/wegelia.jpg">
+                <img src="./fleurs/wegelia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Zinnia</td>
+        <td><a href="./fleurs/zinnia.jpg">
+                <img src="./fleurs/zinnia.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/1.jpg">
+                <img src="./fleurs/1.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/2.jpg">
+                <img src="./fleurs/2.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/3.jpg">
+                <img src="./fleurs/3.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/4.jpg">
+                <img src="./fleurs/4.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/5.jpg">
+                <img src="./fleurs/5.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/6.jpg">
+                <img src="./fleurs/6.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/7.jpg">
+                <img src="./fleurs/7.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/8.jpg">
+                <img src="./fleurs/8.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/9.jpg">
+                <img src="./fleurs/9.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/10.jpg">
+                <img src="./fleurs/10.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/11.jpg">
+                <img src="./fleurs/11.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/12.jpg">
+                <img src="./fleurs/12.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/13.jpg">
+                <img src="./fleurs/13.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/14.jpg">
+                <img src="./fleurs/14.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/15.jpg">
+                <img src="./fleurs/15.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/16.jpg">
+                <img src="./fleurs/16.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/17.jpg">
+                <img src="./fleurs/17.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/18.jpg">
+                <img src="./fleurs/18.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/19.jpg">
+                <img src="./fleurs/19.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i>Non identifiée</i></td>
+        <td><a href="./fleurs/20.jpg">
+                <img src="./fleurs/20.jpg" alt="" border=1 height=200 width=200>
+            </a>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
