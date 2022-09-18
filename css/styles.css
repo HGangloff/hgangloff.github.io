@@ -12,11 +12,11 @@ h1, h2 {
 	color:#0D0D0D;
 }
 h1 {
-	text-align:center;
+    text-align:center;
     font-size:100%;
 }
 h2 { 
-	text-align:center;
+	/*text-align:center;*/
     font-size:100%;
 }
 abbr[title] { border-bottom:none; }
