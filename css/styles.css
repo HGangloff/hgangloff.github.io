@@ -16,7 +16,7 @@ h1 {
     font-size:100%;
 }
 h2 { 
-	/*text-align:center;*/
+	text-align:center;
     font-size:100%;
 }
 abbr[title] { border-bottom:none; }

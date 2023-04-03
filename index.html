@@ -21,11 +21,10 @@
     </section>
         <section>
             <p><a href="#about">About me</a> |
-            <a href="#news">News</a> | 
-            <a href="#teaching">Teaching</a> | 
+                <a href="#code">Code</a> |
             <a href="#super">Supervising</a> | 
             <a href="#publi">Publications</a> |
-	    <a href="#code">Code</a></p>
+            <a href="#teaching">Teaching</a> </p>
         </section>
     </header>
 	
@@ -67,24 +66,53 @@
 
             <br/><br/>
             <section>
-            <h2 id='news'> News </h2>
-            <ul>
-		<li>Tutorial session on Variational Autoencoders for scRNA-seq data for
-        DIGIT-BIO seminar [<a
-        href="https://www6.inrae.fr/digitbio/Page-d-accueil/Actualites/DIGIT-BIO-vous-invite-a-son-1er-seminaire-a-Lyon-les-8-et-9-decembre"
-        target="_blank">info</a>] [<a
-        href="https://forgemia.inra.fr/hugo.gangloff/tuto_digitbio"
-        target="_blank">code</a>]</li>
-		</ul>
+            <h2 id='code'> Code </h2>
+            <h3>Variational Autoencoders</h3>
+		<ul>
+		<li>VAE and VAE-GRF for anomaly detection [<a href="https://github.com/HGangloff/vae_grf" target="_blank">code</a>]</li>
+		    <li>Tutorial session on Variational Autoencoders for scRNA-seq data for
+            DIGIT-BIO seminar [<a href="https://forgemia.inra.fr/hugo.gangloff/tuto_digitbio"
+            target="_blank">code</a>]</li>
+        </ul>
+            <h3>Deep Hidden Markov Models</h3>
+		<ul>
+                   <li> Unsupervised signal processing with deep extensions of Hidden Markov Chains: <a href="https://github.com/HGangloff/deep_hidden_markov_models" target="_blank">Python project</a>
+                   </li>
+                   
+                   <li>Deep parameterizations of pairwise and triplet Markov models for unsupervised classification of sequential data [<a href="https://github.com/HGangloff/deep_hidden_markov_models" target="_blank">code</a>]
+                   </li>
+               </ul>
+            <h3>Some scripts and algorithm implementations</h3>
+		<ul>
+            <li> Experimentally show the equivalence between a gradient
+                   ascent over the EM quantity Q and a gradient
+                   ascent over the model likelihood, in the case of the
+                   training of a Hidden Markov Chain with Gaussian
+                   Independent Noise:
+            <a href="https://gist.github.com/HGangloff/6b6a177eed2ae3387cbb5aa92fea87c4">
+                Python script</a>, my <a href="pdfs/note_gradEM.pdf"
+                target="_blank">pdf note</a> and see section 2.1 of <a
+                href="https://projecteuclid.org/journals/annals-of-statistics/volume-45/issue-1/Statistical-guarantees-for-the-EM-algorithm--From-population-to/10.1214/16-AOS1435.full">
+                this paper</a></li>
+                   <li> Gaussian Markov Random Field simulation using Fourier properties and base matrices for efficiency:
+            <a href="https://gist.github.com/HGangloff/d6b4a7f12361c53379cf6a8d5177ec61">
+                Python script</a></li>
+		    <li>Rescaled Forward-Backward algorithm for Hidden Markov Chains with Jax using lax.scan: 
+            <a href="https://gist.github.com/HGangloff/0698566a64d9f3db3e009d4ccc4bda75">
+                Python script</a></li>
+                   <li>Extremely fast rescaled Forward-Backward algorithm for Hidden Markov Chains with Python calling C using ctypes and a shared library: 
+            <a href="https://gist.github.com/HGangloff/0f6c82c48b460b7430a3dadca491b2dd">
+                Python script and C files</a></li>
+		    <li> Chromatic Gibbs sampler for a binary Ising Markov Random Field with Jax using jit, vmap and lax.scan: 
+            <a href="https://gist.github.com/HGangloff/85987b1b80acde534c7f930bb1e9f91c">
+                Python script</a></li>
+		<li> Sequential Importance Resampling Particle Filter with Jax using jit and lax.scan: 
+            <a href="https://gist.github.com/HGangloff/cae63fe2851ef92fdd80121cf590bee6">
+                Python script</a></li></ul>
+
+
             </section>
             
-            <br/><br/>
-            <section>
-            <h2 id='teaching'> Teaching </h2>
-            <p>See previous teaching experiences <a
-                    href="old_teachings.html">here</a>.</p>
-            </section>
-
             <br/><br/>
             <section>
             <h2 id='super'> Supervising </h2>
@@ -185,53 +213,13 @@ Technology Society (SEE), in 2017, for the research project <i>Stent segmentatio
             </section>
 
 	    <br/><br/>
+
             <section>
-            <h2 id='code'> Code </h2>
-            <h3>Variational Autoencoders</h3>
-		<ul>
-		<li>VAE and VAE-GRF for anomaly detection [<a href="https://github.com/HGangloff/vae_grf" target="_blank">code</a>]</li>
-		    <li>Tutorial session on Variational Autoencoders for scRNA-seq data for
-            DIGIT-BIO seminar [<a href="https://forgemia.inra.fr/hugo.gangloff/tuto_digitbio"
-            target="_blank">code</a>]</li>
-        </ul>
-            <h3>Deep Hidden Markov Models</h3>
-		<ul>
-                   <li> Unsupervised signal processing with deep extensions of Hidden Markov Chains: <a href="https://github.com/HGangloff/deep_hidden_markov_models" target="_blank">Python project</a>
-                   </li>
-                   
-                   <li>Deep parameterizations of pairwise and triplet Markov models for unsupervised classification of sequential data [<a href="https://github.com/HGangloff/deep_hidden_markov_models" target="_blank">code</a>]
-                   </li>
-               </ul>
-            <h3>Some scripts and algorithm implementations</h3>
-		<ul>
-            <li> Experimentally show the equivalence between a gradient
-                   ascent over the EM quantity Q and a gradient
-                   ascent over the model likelihood, in the case of the
-                   training of a Hidden Markov Chain with Gaussian
-                   Independent Noise:
-            <a href="https://gist.github.com/HGangloff/6b6a177eed2ae3387cbb5aa92fea87c4">
-                Python script</a>, my <a href="pdfs/note_gradEM.pdf"
-                target="_blank">pdf note</a> and see section 2.1 of <a
-                href="https://projecteuclid.org/journals/annals-of-statistics/volume-45/issue-1/Statistical-guarantees-for-the-EM-algorithm--From-population-to/10.1214/16-AOS1435.full">
-                this paper</a></li>
-                   <li> Gaussian Markov Random Field simulation using Fourier properties and base matrices for efficiency:
-            <a href="https://gist.github.com/HGangloff/d6b4a7f12361c53379cf6a8d5177ec61">
-                Python script</a></li>
-		    <li>Rescaled Forward-Backward algorithm for Hidden Markov Chains with Jax using lax.scan: 
-            <a href="https://gist.github.com/HGangloff/0698566a64d9f3db3e009d4ccc4bda75">
-                Python script</a></li>
-                   <li>Extremely fast rescaled Forward-Backward algorithm for Hidden Markov Chains with Python calling C using ctypes and a shared library: 
-            <a href="https://gist.github.com/HGangloff/0f6c82c48b460b7430a3dadca491b2dd">
-                Python script and C files</a></li>
-		    <li> Chromatic Gibbs sampler for a binary Ising Markov Random Field with Jax using jit, vmap and lax.scan: 
-            <a href="https://gist.github.com/HGangloff/85987b1b80acde534c7f930bb1e9f91c">
-                Python script</a></li>
-		<li> Sequential Importance Resampling Particle Filter with Jax using jit and lax.scan: 
-            <a href="https://gist.github.com/HGangloff/cae63fe2851ef92fdd80121cf590bee6">
-                Python script</a></li></ul>
-
-
+            <h2 id='teaching'> Teaching </h2>
+            <p>See previous teaching experiences <a
+                    href="old_teachings.html">here</a>.</p>
             </section>
+
         </main>
     </div>
 
